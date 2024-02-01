@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,26 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
-###############################################################################
-# TODO: 2. (8 pts)
+def add(num1,num2):
+    result=num1+num2
+    return result 
+def subtract(num1,num2):
+    result=num1-num2
+    return result 
+def multiply(num1,num2):
+    result=num1*num2
+    return result 
+def divide(num1,num2):
+    result=num1/num2 
+    return result   
+def cbrt(num1): 
+    result=num1 **(1/3) 
+    return result
+    
+    
+    
+    ###############################################################################
+# DONE: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -58,11 +75,32 @@
 #   the ball rolling.
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
-###############################################################################
+############################################################################### 
+def main(): 
+    print("Welcome to the Simple Calculator!")
+    num1=float(input("Enter the first number: "))
+    num2=float(input("Enter the second number: "))
+    print("Add:", add(num1, num2))
+    print("Subtract:", subtract(num1, num2))
+    print("Multiply:", multiply(num1, num2))
+    print("Divide:", divide(num1, num2))
+    print("thank you for using the Simple Calculator. Goodbye!")
+main()
+
 
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
-#
+# DONE: 3. EXTRA CREDIT (4 pts)
+def main(): 
+    print("Welcome to the Simple Calculator!")
+    num1=float(input("Enter the first number: "))
+    num2=float(input("Enter the second number: "))
+    print("Add:", add(num1, num2))
+    print("Subtract:", subtract(num1, num2))
+    print("Multiply:", multiply(num1, num2))
+    print("Divide:", divide(num1, num2))
+    print("cube root:",cbrt(num1))
+    print("thank you for using the Simple Calculator. Goodbye!")
+main()
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this
 #   _TODO_ to receive full points on this assignment, but you can receive up to
